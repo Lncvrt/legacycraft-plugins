@@ -1,0 +1,2 @@
+rootProject.name = 'LegacyCraft-Plugins'
+include("164plugin")
