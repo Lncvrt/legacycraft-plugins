@@ -2,15 +2,8 @@ plugins {
     id 'java'
 }
 
-group = 'xyz.lncvrt'
-version = '1.0.0'
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    compileOnly(files('libs/craftbukkit-1.6.4-R2.0.jar'))
+    compileOnly(files('../libs/craftbukkit-1.6.4-R2.0.jar'))
 }
 
 def targetJavaVersion = 8
@@ -28,14 +21,5 @@ tasks.withType(JavaCompile).configureEach {
 
     if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
         options.release.set(targetJavaVersion)
-    }
-}
-
-processResources {
-    def props = [version: version]
-    inputs.properties props
-    filteringCharset 'UTF-8'
-    filesMatching('plugin.yml') {
-        expand props
     }
 }

@@ -1,0 +1,10 @@
+name: 'LegacyCraftPlugin'
+version: '${version}'
+main: xyz.lncvrt.legacycraftplugins.onepointsixplugin.LegacyCraftPlugin
+commands:
+  spawn:
+    usage: /spawn
+  rules:
+    usage: /rules
+  discord:
+    usage: /discord

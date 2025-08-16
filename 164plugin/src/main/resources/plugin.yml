@@ -1,3 +1,0 @@
-name: SpeedLimitPlugin
-version: '${version}'
-main: xyz.lncvrt.speedlimitplugin.SpeedLimitPlugin
