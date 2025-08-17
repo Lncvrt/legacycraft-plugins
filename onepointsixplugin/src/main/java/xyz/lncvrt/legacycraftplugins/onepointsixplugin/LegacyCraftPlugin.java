@@ -1,9 +1,7 @@
 package xyz.lncvrt.legacycraftplugins.onepointsixplugin;
 
-import net.minecraft.server.v1_6_R3.EntityPlayer;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
-import org.bukkit.OfflinePlayer;
 import org.bukkit.craftbukkit.v1_6_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -16,7 +14,6 @@ import xyz.lncvrt.legacycraftplugins.onepointsixplugin.commands.*;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.stream.Collectors;
 
 public final class LegacyCraftPlugin extends JavaPlugin implements Listener {
     private final Map<UUID, Location> lastPos = new ConcurrentHashMap<>();
